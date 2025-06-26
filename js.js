@@ -10,7 +10,6 @@ var sources = [];
 var backgroundIsDisplayed = true;
 
 function toggleBackground() {
-
 	"use strict";
 	backgroundIsDisplayed = !backgroundIsDisplayed;
 	const helmetsBackgrounds = document.getElementsByClassName("imgBackground");
@@ -25,7 +24,6 @@ function toggleBackground() {
 			helmetsBackgrounds[j].src = "../common/void.png";
 		}
 	}
-
 }
 
 const helmets = document.getElementsByClassName("img-random-helmet");
@@ -63,7 +61,6 @@ const helmetsSources = [
 ];
 
 function randomSource() {
-
 	"use strict";
 	setInterval(
 		function() {
@@ -74,13 +71,11 @@ function randomSource() {
 		},
 		pause * 2
 	);
-
 }
 
 var languageTitle;
 
 function englishTo(language) {
-
 	"use strict";
 	switch (language) {
 		case "aurebesh":
@@ -104,7 +99,6 @@ function englishTo(language) {
 		},
 		pause
 	);
-
 }
 
 const urlHtml = "https://validator.w3.org/nu/?doc=https%3A%2F%2Fstarwarsanimations44.github.io%2Fhelmets%2F";
@@ -144,7 +138,6 @@ const pages = {
 };
 
 function validation(language) {
-
 	"use strict";
 	switch (language) {
 		case "html":
@@ -157,7 +150,6 @@ function validation(language) {
 			window.open(urlJs, "_blank");
 			break;
 	}
-
 }
 
 // ================================================================================================================= //
@@ -165,7 +157,6 @@ function validation(language) {
 // ================================================================================================================= //
 
 function multiplePeriodicBackgrounds(spanList) {
-
 	for (var i = spanList.length - 1; i >= 0; i--) {
 		switch (spanList[i]) {
 			case 2:
@@ -185,11 +176,9 @@ function multiplePeriodicBackgrounds(spanList) {
 				break;
 		}
 	}
-
 }
 
 function periodicBackground2() {
-
 	"use strict";
 	var backgrounds = [];
 	for (var i = 2; i > 0; i--) {backgrounds.push(document.getElementsByClassName("imgBackground-" + i + "-2"))}
@@ -213,11 +202,9 @@ function periodicBackground2() {
 		},
 		pause
 	);
-
 }
 
 function periodicBackground3() {
-
 	"use strict";
 	var backgrounds = [];
 	for (var i = 3; i > 0; i--) {backgrounds.push(document.getElementsByClassName("imgBackground-" + i + "-3"))}
@@ -248,11 +235,9 @@ function periodicBackground3() {
 		},
 		pause
 	);
-
 }
 
 function periodicBackground4() {
-
 	"use strict";
 	var backgrounds = [];
 	for (var i = 4; i > 0; i--) {backgrounds.push(document.getElementsByClassName("imgBackground-" + i + "-4"))}
@@ -290,11 +275,9 @@ function periodicBackground4() {
 		},
 		pause
 	);
-
 }
 
 function periodicBackground5() {
-
 	"use strict";
 	var backgrounds = [];
 	for (var i = 5; i > 0; i--) {backgrounds.push(document.getElementsByClassName("imgBackground-" + i + "-5"))}
@@ -339,11 +322,9 @@ function periodicBackground5() {
 		},
 		pause
 	);
-
 }
 
 function periodicBackground16() {
-
 	"use strict";
 	var backgrounds = [];
 	for (var i = 16; i > 0; i--) {backgrounds.push(document.getElementsByClassName("imgBackground-" + i + "-16"))}
@@ -385,7 +366,6 @@ function periodicBackground16() {
 		},
 		pause
 	);
-
 }
 
 // ================================================================================================================= //
