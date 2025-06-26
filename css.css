@@ -40,7 +40,6 @@ button:hover {
 
 div {position: relative;}
 #table {overflow-x: auto;}
-.validation:hover {cursor: pointer;}
 
 h1,
 .title {
@@ -84,10 +83,6 @@ nav {
 #nav-mandalorians-units {aspect-ratio: 3752 / 1000;}
 #nav-republic {aspect-ratio: 4575 / 1000;}
 #nav-republic-units {aspect-ratio: 1866 / 1000;}
-#nav-validation {
-	width: 25%;
-	aspect-ratio: 3200 / 1000;
-}
 
 p {
 	font-size: 50%;
