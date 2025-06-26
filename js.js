@@ -101,57 +101,6 @@ function englishTo(language) {
 	);
 }
 
-const urlHtml = "https://validator.w3.org/nu/?doc=https%3A%2F%2Fstarwarsanimations44.github.io%2Fhelmets%2F";
-const urlCss = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fstarwarsanimations44.github.io%2Fhelmets";
-const urlJs = "https://js.js";
-const parentPageTitle = window.parent.document.title;
-const pages = {
-	"Home": "index.html",
-
-	"Empire": "empire/common.html",
-	"Paintings – Empire": "empire/paintings.html",
-
-	"Mandalorians": "mandalorians/common.html",
-	"Accessories – Mandalorians": "mandalorians/accessories.html",
-	"Paintings – Mandalorians": "mandalorians/paintings.html",
-	"Units – Mandalorians": "mandalorians/units.html",
-		"Nite Owls": "mandalorians/units/nite-owls.html",
-		"Super Commando": "mandalorians/units/super-commando.html",
-
-	"Republic": "republic/common.html",
-	"Accessories – Republic": "republic/accessories.html",
-	"Paintings – Republic": "republic/paintings.html",
-	"Units – Republic": "republic/units.html",
-		"104th Battalion": "republic/units/battalion-104.html",
-		"169th Attack Battalion": "republic/units/battalion-attack-169.html",
-		"212th Attack Battalion": "republic/units/battalion-attack-212.html",
-		"Horn Company": "republic/units/company-horn.html",
-		"Tango Company": "republic/units/company-tango.html",
-		"41st Elite Corps": "republic/units/corps-elite-41.html",
-		"21st Nova Corps": "republic/units/corps-nova-21.html",
-		"91st Mobile Reconnaissance Corps": "republic/units/corps-reconnaissance-mobile-91.html",
-		"327th Star Corps": "republic/units/corps-star-327.html",
-		"Coruscent Guard": "republic/units/guard-coruscent.html",
-		"7th Legion": "republic/units/legion-7.html",
-		"501st Legion": "republic/units/legion-501.html",
-		"Kamino Security": "republic/units/security-kamino.html"
-};
-
-function validation(language) {
-	"use strict";
-	switch (language) {
-		case "html":
-			if (parentPageTitle in pages) {window.open(urlHtml + pages[parentPageTitle], "_blank")}
-			break;
-		case "css":
-			window.open(urlCss, "_blank");
-			break;
-		case "js":
-			window.open(urlJs, "_blank");
-			break;
-	}
-}
-
 // ================================================================================================================= //
 	// periodic backgrounds
 // ================================================================================================================= //
