@@ -32,11 +32,11 @@ const helmetsSources = [
 	"empire/common/shoretrooper.png",
 	"empire/common/purge.png",
 	
-	"mandalorians/common/AxeWoves.png",
-	"mandalorians/common/BobaFett.png",
-	"mandalorians/common/DinDjarin.png",
-	"mandalorians/common/JangoFett.png",
-	"mandalorians/common/PreVizsla.png",
+	"mandalorians/common/axe-woves.png",
+	"mandalorians/common/boba-fett.png",
+	"mandalorians/common/din-djarin.png",
+	"mandalorians/common/jango-fett.png",
+	"mandalorians/common/pre-vizsla.png",
 
 	"republic/common/arc_I.png",
 	"republic/common/arc_II.png",
@@ -56,8 +56,8 @@ const helmetsSources = [
 	"republic/common/pil_IIB.png",
 	"republic/common/sco_II.png",
 	"republic/common/Sergeant_tro_I.png",
-	"republic/models/clone-trooper-I.png",
-	"republic/models/clone-trooper-II.png"
+	"republic/models/trooper-i.png",
+	"republic/models/trooper-ii.png"
 ];
 
 function randomSource() {
