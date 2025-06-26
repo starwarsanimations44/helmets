@@ -65,8 +65,8 @@ const helmetsSources = [
 	"republic/common/pil_IIB.png",
 	"republic/common/sco_II.png",
 	"republic/common/Sergeant_tro_I.png",
-	"republic/common/tro_I.png",
-	"republic/common/tro_II.png"
+	"republic/models/tro_I.png",
+	"republic/models/tro_II.png"
 
 ];
 
