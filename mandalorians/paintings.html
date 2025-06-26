@@ -16,138 +16,106 @@
 <body onload = "englishTo('mandoa'); multiplePeriodicBackgrounds([4])">
 <iframe src = nav.html title = nav id = nav-mandalorians></iframe>
 
-
 <div class = title>
-
-<div id = english>Paintings</div>
-
-<div id = mandoa-title>
-	<img src = mandoa/p.png alt = p>
-	<img src = mandoa/a.png alt = a>
-	<img src = mandoa/i.png alt = i>
-	<img src = mandoa/n.png alt = n>
-	<img src = mandoa/t.png alt = t>
-	<img src = mandoa/i.png alt = i>
-	<img src = mandoa/n.png alt = n>
-	<img src = mandoa/g.png alt = g>
-	<img src = mandoa/s.png alt = s>
+	<div id = english>Paintings</div>
+	<div id = mandoa-title>
+		<img src = mandoa/p.png alt = p>
+		<img src = mandoa/a.png alt = a>
+		<img src = mandoa/i.png alt = i>
+		<img src = mandoa/n.png alt = n>
+		<img src = mandoa/t.png alt = t>
+		<img src = mandoa/i.png alt = i>
+		<img src = mandoa/n.png alt = n>
+		<img src = mandoa/g.png alt = g>
+		<img src = mandoa/s.png alt = s>
+	</div>
 </div>
-
-</div>
-
 <button onclick = toggleBackground()>Backgrounds</button>
-
 <div id = table>
-
 <table>
-
-<tr>
-	<td><img src = models/f_a.png alt = model_f_a></td>
-	<td><img src = models/m_1.png alt = model_m_1></td>
-	<td><img src = models/m_2.png alt = model_m_2></td>
-	<td><img src = models/m_3.png alt = model_m_3></td>
-</tr>
-
-<tr>
-	<th>Female</th>
-	<th colspan = 3>Male</th>
-</tr>
-
-<tr class = tr-text>
-	<td>F <span>A</span></td>
-	<td>M <span>1</span></td>
-	<td>M <span>2</span></td>
-	<td>M <span>3</span></td>
-</tr>
-
-<tr>
-	<td>
-		<div>
-			<img src = models/f_a.png class = imgBackground alt = model_f_a>
-			<img src = paintings/00/f_a.png class = img-foreground alt = 00_f_a>
-		</div>
-	</td>
-	<td colspan = 3></td>
-</tr>
-
-<tr>
-	<td colspan = 4 class = td-colspan-4>
-		<div>
-			<div class = imgBackground-4-4>
-				<img src = models/f_a.png class = imgBackground alt = model_f_a>
+	<tr>
+		<td><img src = models/female-a.png alt = "Female A"></td>
+		<td><img src = models/male-1.png alt = "Male 3"></td>
+		<td><img src = models/male-2.png alt = "Male 3"></td>
+		<td><img src = models/male-3.png alt = "Male 3"></td>
+	</tr><tr>
+		<th>Female</th>
+		<th colspan = 3>Male</th>
+	</tr><tr class = tr-text>
+		<td>Female <span>A</span></td>
+		<td>Male <span>1</span></td>
+		<td>Male <span>2</span></td>
+		<td>Male <span>3</span></td>
+	</tr><tr>
+		<td>
+			<div>
+				<img src = models/female-a.png class = imgBackground alt = "Female A">
+				<img src = paintings/00/female-a.png class = img-foreground alt = "00 - Female A">
 			</div>
-			<div class = imgBackground-1-4>
-				<img src = models/m_1.png class = imgBackground alt = model_m_1>
+		</td>
+		<td colspan = 3></td>
+	</tr><tr>
+		<td colspan = 4 class = td-colspan-4>
+			<div>
+				<div class = imgBackground-4-4>
+					<img src = models/female-a.png class = imgBackground alt = "Female A">
+				</div>
+				<div class = imgBackground-1-4>
+					<img src = models/male-1.png class = imgBackground alt = "Male 3">
+				</div>
+				<div class = imgBackground-2-4>
+					<img src = models/male-2.png class = imgBackground alt = "Male 3">
+				</div>
+				<div class = imgBackground-3-4>
+					<img src = models/male-3.png class = imgBackground alt = "Male 3">
+				</div>
+				<img src = paintings/01/f-m.png class = img-foreground-colspan-4 alt = "01 - Female / Male">
 			</div>
-			<div class = imgBackground-2-4>
-				<img src = models/m_2.png class = imgBackground alt = model_m_2>
+		</td>
+	</tr><tr>
+		<td colspan = 3></td>
+		<td>
+			<div>
+				<img src = models/male-3.png class = imgBackground alt = "Male 3">
+				<img src = paintings/02/male-3.png class = img-foreground alt = "02 - Male 3">
 			</div>
-			<div class = imgBackground-3-4>
-				<img src = models/m_3.png class = imgBackground alt = model_m_3>
+		</td>
+	</tr><tr>
+		<td colspan = 3></td>
+		<td>
+			<div>
+				<img src = models/male-3.png class = imgBackground alt = "Male 3">
+				<img src = paintings/03/male-3.png class = img-foreground alt = "03 - Male 3">
 			</div>
-			<img src = paintings/01/f-m.png class = img-foreground-colspan-4 alt = 01_f-m>
-		</div>
-	</td>
-</tr>
-
-<tr>
-	<td colspan = 3></td>
-	<td>
-		<div>
-			<img src = models/m_3.png class = imgBackground alt = model_m_3>
-			<img src = paintings/02/m_3.png class = img-foreground alt = 02_m_3>
-		</div>
-	</td>
-</tr>
-
-<tr>
-	<td colspan = 3></td>
-	<td>
-		<div>
-			<img src = models/m_3.png class = imgBackground alt = model_m_3>
-			<img src = paintings/03/m_3.png class = img-foreground alt = 03_m_3>
-		</div>
-	</td>
-</tr>
-
-<tr>
-	<td></td>
-	<td>
-		<div>
-			<img src = models/m_1.png class = imgBackground alt = model_m_1>
-			<img src = paintings/04/m_1.png class = img-foreground alt = 04_m_1>
-		</div>
-	</td>
-	<td colspan = 2></td>
-</tr>
-
-<tr class = tr-text>
-	<td>F <span>A</span></td>
-	<td>M <span>1</span></td>
-	<td>M <span>2</span></td>
-	<td>M <span>3</span></td>
-</tr>
-
-<tr>
-	<th>Female</th>
-	<th colspan = 3>Male</th>
-</tr>
-
-<tr>
-	<td><img src = models/f_a.png alt = model_f_a></td>
-	<td><img src = models/m_1.png alt = model_m_1></td>
-	<td><img src = models/m_2.png alt = model_m_2></td>
-	<td><img src = models/m_3.png alt = model_m_3></td>
-</tr>
-
+		</td>
+	</tr><tr>
+		<td></td>
+		<td>
+			<div>
+				<img src = models/male-1.png class = imgBackground alt = "Male 3">
+				<img src = paintings/04/male-1.png class = img-foreground alt = "04 - Male 1">
+			</div>
+		</td>
+		<td colspan = 2></td>
+	</tr><tr class = tr-text>
+		<td>Female <span>A</span></td>
+		<td>Male <span>1</span></td>
+		<td>Male <span>2</span></td>
+		<td>Male <span>3</span></td>
+	</tr><tr>
+		<th>Female</th>
+		<th colspan = 3>Male</th>
+	</tr><tr>
+		<td><img src = models/female-a.png alt = "Female A"></td>
+		<td><img src = models/male-1.png alt = "Male 3"></td>
+		<td><img src = models/male-2.png alt = "Male 3"></td>
+		<td><img src = models/male-3.png alt = "Male 3"></td>
+	</tr>
 </table>
-
 </div>
-
 <button onclick = toggleBackground()>Backgrounds</button>
 
-<h1> </h1>
-
+<h1>&nbsp;</h1>
 
 <iframe src = ../validation.html title = validation id = nav-validation></iframe>
 
