@@ -6,7 +6,6 @@
 
 const pause = 1000; // miliseconds
 
-
 var sources = [];
 var backgroundIsDisplayed = true;
 
