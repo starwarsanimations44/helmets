@@ -28,7 +28,8 @@ function toggleBackground() {
 
 const helmets = document.getElementsByClassName("img-random-helmet");
 const helmetsSources = [
-	"empire/common/coa.png",
+	"empire/common/stormtrooper.png",
+	"empire/common/shoretrooper.png",
 	"empire/common/purge.png",
 	
 	"mandalorians/common/AxeWoves.png",
