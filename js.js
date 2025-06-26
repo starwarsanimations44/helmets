@@ -57,7 +57,6 @@ const helmetsSources = [
 	"republic/common/Sergeant_tro_I.png",
 	"republic/models/clone-trooper-I.png",
 	"republic/models/clone-trooper-II.png"
-
 ];
 
 function randomSource() {
