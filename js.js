@@ -17,9 +17,8 @@ function toggleBackground() {
 	buttons = document.getElementsByClassName("button");
 	for (var i = 0; i < buttons.length; i++) {buttons[i].style.backgroundColor = backgroundColor;}
 	for (var j = 0; j < helmetsBackgrounds.length; j++) {
-		if (backgroundIsDisplayed) {
-			helmetsBackgrounds[j].src = sources[j];
-		} else {
+		if (backgroundIsDisplayed) {helmetsBackgrounds[j].src = sources[j];}
+		else {
 			sources[j] = helmetsBackgrounds[j].src;
 			helmetsBackgrounds[j].src = "../common/void.png";
 		}
@@ -79,7 +78,7 @@ function englishTo(language) {
 	"use strict";
 	switch (language) {
 		case "aurebesh":
-			languageTitle = document.getElementById("aurebesh");
+			languageTitle = document.getElementById(language);
 			break;
 		case "mandoa":
 			languageTitle = document.getElementById("mandoa-title");
