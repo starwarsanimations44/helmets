@@ -66,8 +66,7 @@ function randomSource() {
 	setInterval(
 		function() {
 			for (var i = helmets.length - 1; i >= 0; i--) {
-				randomIndex = Math.floor(Math.random() * helmetsSources.length);
-				helmets[i].src = helmetsSources[randomIndex];
+				helmets[i].src = helmetsSources[Math.floor(Math.random() * helmetsSources.length)];
 			}
 		},
 		pause * 2
