@@ -105,48 +105,48 @@ function multiplePeriodicBackgrounds(spanList) {
 	for (var i = spanList.length - 1; i >= 0; i--) {periodicBackground(spanList[i]);}
 }
 
-function periodicBackground(length) {
+function periodicBackground(number) {
 	"use strict";
 	var backgrounds = [];
-	for (var i = length; i > 0; i--) {backgrounds.push(document.getElementsByClassName("imgBackground-" + i + "-" + length))}
+	for (var i = number; i > 0; i--) {backgrounds.push(document.getElementsByClassName("imgBackground-" + i + "-" + number))}
 	const length = backgrounds[0].length;
 	setInterval(
 		function() {
 
-			if (length == 2) {
+			if (number == 2) {
 
 				switch ("block") {
 					case backgrounds[0][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (var i = number - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "none";
 							backgrounds[1][i].style.display = "block";
 						}
 						break;
 					default:
-						for (var i = length - 1; i >= 0; i--) {
+						for (var i = number - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "block";
 							backgrounds[1][i].style.display = "none";
 						}
 						break;
 				}
 
-			} else if (length == 3) {
+			} else if (number == 3) {
 
 				switch ("block") {
 					case backgrounds[0][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (var i = number - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "none";
 							backgrounds[1][i].style.display = "block";
 						}
 						break;
 					case backgrounds[1][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (var i = number - 1; i >= 0; i--) {
 							backgrounds[1][i].style.display = "none";
 							backgrounds[2][i].style.display = "block";
 						}
 						break;
 					default:
-						for (var i = length - 1; i >= 0; i--) {
+						for (var i = number - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "block";
 							backgrounds[1][i].style.display = "none";
 							backgrounds[2][i].style.display = "none";
@@ -154,29 +154,29 @@ function periodicBackground(length) {
 						break;
 				}
 
-			} else if (length == 4) {
+			} else if (number == 4) {
 				
 				switch ("block") {
 					case backgrounds[0][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (var i = number - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "none";
 							backgrounds[1][i].style.display = "block";
 						}
 						break;
 					case backgrounds[1][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (var i = number - 1; i >= 0; i--) {
 							backgrounds[1][i].style.display = "none";
 							backgrounds[2][i].style.display = "block";
 						}
 						break;
 					case backgrounds[2][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (var i = number - 1; i >= 0; i--) {
 							backgrounds[2][i].style.display = "none";
 							backgrounds[3][i].style.display = "block";
 						}
 						break;
 					default:
-						for (var i = length - 1; i >= 0; i--) {
+						for (var i = number - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "block";
 							backgrounds[1][i].style.display = "none";
 							backgrounds[2][i].style.display = "none";
@@ -185,35 +185,35 @@ function periodicBackground(length) {
 						break;
 				}
 
-			} else if (length == 5) {
+			} else if (number == 5) {
 				
 				switch ("block") {
 					case backgrounds[0][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (var i = number - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "none";
 							backgrounds[1][i].style.display = "block";
 						}
 						break;
 					case backgrounds[1][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (var i = number - 1; i >= 0; i--) {
 							backgrounds[1][i].style.display = "none";
 							backgrounds[2][i].style.display = "block";
 						}
 						break;
 					case backgrounds[2][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (var i = number - 1; i >= 0; i--) {
 							backgrounds[2][i].style.display = "none";
 							backgrounds[3][i].style.display = "block";
 						}
 						break;
 					case backgrounds[3][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (var i = number - 1; i >= 0; i--) {
 							backgrounds[3][i].style.display = "none";
 							backgrounds[4][i].style.display = "block";
 						}
 						break;
 					default:
-						for (var i = length - 1; i >= 0; i--) {
+						for (var i = number - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "block";
 							backgrounds[1][i].style.display = "none";
 							backgrounds[2][i].style.display = "none";
@@ -223,35 +223,35 @@ function periodicBackground(length) {
 						break;
 				}
 
-			} else if (length == 16) {
+			} else if (number == 16) {
 				
 				switch ("block") {
 					case backgrounds[0][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (var i = number - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "none";
 							backgrounds[1][i].style.display = "block";
 						}
 						break;
 					case backgrounds[1][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (var i = number - 1; i >= 0; i--) {
 							backgrounds[1][i].style.display = "none";
 							backgrounds[2][i].style.display = "block";
 						}
 						break;
 					case backgrounds[2][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (var i = number - 1; i >= 0; i--) {
 							backgrounds[2][i].style.display = "none";
 							backgrounds[3][i].style.display = "block";
 						}
 						break;
 					case backgrounds[3][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (var i = number - 1; i >= 0; i--) {
 							backgrounds[3][i].style.display = "none";
 							backgrounds[4][i].style.display = "block";
 						}
 						break;
 					default:
-						for (var i = length - 1; i >= 0; i--) {
+						for (var i = number - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "block";
 							for (var j = 15; j > 0; j--) {backgrounds[j][i].style.display = "none";}
 						}
