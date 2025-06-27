@@ -31,6 +31,7 @@ helmetsSources = [
 	"empire/models/stormtrooper.png",
 	"empire/common/shoretrooper.png",
 	"empire/common/purge.png",
+	"empire/common/incinerator.png",
 	
 	"mandalorians/common/axe-woves.png",
 	"mandalorians/common/boba-fett.png",
