@@ -73,6 +73,8 @@ function randomSource() {
 	);
 }
 
+var languageTitle;
+
 function englishTo(language) {
 	"use strict";
 	switch (language) {
