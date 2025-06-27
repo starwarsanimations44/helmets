@@ -107,7 +107,7 @@ function multiplePeriodicBackgrounds(spanList) {
 
 function periodicBackground(number) {
 	"use strict";
-	backgrounds = [];
+	var backgrounds = [];
 	for (i = number; i > 0; i--) {backgrounds.push(document.getElementsByClassName("imgBackground-" + i + "-" + number))}
 	length = backgrounds[0].length;
 	setInterval(
