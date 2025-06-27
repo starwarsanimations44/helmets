@@ -4,7 +4,7 @@
 //                                                                                                                   //
 // ================================================================================================================= //
 
-const pause = 1000; // miliseconds
+const pause = 1000; // ms
 
 var sources = [];
 var backgroundIsDisplayed = true;
@@ -51,7 +51,7 @@ const helmetsSources = [
 	"republic/models/eng_II.png",
 	"republic/common/lieutenant-i.png",
 	"republic/models/par_II.png",
-	"republic/common/pil_I.png",
+	"republic/common/pilot-i.png",
 	"republic/models/pil_IIA.png",
 	"republic/models/pil_IIB.png",
 	"republic/models/sco_II.png",
