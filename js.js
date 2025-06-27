@@ -101,216 +101,163 @@ function englishTo(language) {
 	);
 }
 
-// ================================================================================================================= //
-	// periodic backgrounds
-// ================================================================================================================= //
-
 function multiplePeriodicBackgrounds(spanList) {
-	for (var i = spanList.length - 1; i >= 0; i--) {
-		switch (spanList[i]) {
-			case 2:
-				periodicBackground2();
-				break;
-			case 3:
-				periodicBackground3();
-				break;
-			case 4:
-				periodicBackground4();
-				break;
-			case 5:
-				periodicBackground5();
-				break;
-			case 16:
-				periodicBackground16();
-				break;
-		}
-	}
+	for (var i = spanList.length - 1; i >= 0; i--) {periodicBackground(spanList[i]);}
 }
 
-function periodicBackground2() {
+function periodicBackground(length) {
 	"use strict";
 	var backgrounds = [];
-	for (var i = 2; i > 0; i--) {backgrounds.push(document.getElementsByClassName("imgBackground-" + i + "-2"))}
+	for (var i = length; i > 0; i--) {backgrounds.push(document.getElementsByClassName("imgBackground-" + i + "-" + length))}
 	const length = backgrounds[0].length;
 	setInterval(
 		function() {
-			switch ("block") {
-				case backgrounds[0][0].style.display:
-					for (var i = length - 1; i >= 0; i--) {
-						backgrounds[0][i].style.display = "none";
-						backgrounds[1][i].style.display = "block";
-					}
-					break;
-				default:
-					for (var i = length - 1; i >= 0; i--) {
-						backgrounds[0][i].style.display = "block";
-						backgrounds[1][i].style.display = "none";
-					}
-					break;
-			}
-		},
-		pause
-	);
-}
 
-function periodicBackground3() {
-	"use strict";
-	var backgrounds = [];
-	for (var i = 3; i > 0; i--) {backgrounds.push(document.getElementsByClassName("imgBackground-" + i + "-3"))}
-	const length = backgrounds[0].length;
-	setInterval(
-		function() {
-			switch ("block") {
-				case backgrounds[0][0].style.display:
-					for (var i = length - 1; i >= 0; i--) {
-						backgrounds[0][i].style.display = "none";
-						backgrounds[1][i].style.display = "block";
-					}
-					break;
-				case backgrounds[1][0].style.display:
-					for (var i = length - 1; i >= 0; i--) {
-						backgrounds[1][i].style.display = "none";
-						backgrounds[2][i].style.display = "block";
-					}
-					break;
-				default:
-					for (var i = length - 1; i >= 0; i--) {
-						backgrounds[0][i].style.display = "block";
-						backgrounds[1][i].style.display = "none";
-						backgrounds[2][i].style.display = "none";
-					}
-					break;
-			}
-		},
-		pause
-	);
-}
+			if (length == 2) {
 
-function periodicBackground4() {
-	"use strict";
-	var backgrounds = [];
-	for (var i = 4; i > 0; i--) {backgrounds.push(document.getElementsByClassName("imgBackground-" + i + "-4"))}
-	const length = backgrounds[0].length;
-	setInterval(
-		function() {
-			switch ("block") {
-				case backgrounds[0][0].style.display:
-					for (var i = length - 1; i >= 0; i--) {
-						backgrounds[0][i].style.display = "none";
-						backgrounds[1][i].style.display = "block";
-					}
-					break;
-				case backgrounds[1][0].style.display:
-					for (var i = length - 1; i >= 0; i--) {
-						backgrounds[1][i].style.display = "none";
-						backgrounds[2][i].style.display = "block";
-					}
-					break;
-				case backgrounds[2][0].style.display:
-					for (var i = length - 1; i >= 0; i--) {
-						backgrounds[2][i].style.display = "none";
-						backgrounds[3][i].style.display = "block";
-					}
-					break;
-				default:
-					for (var i = length - 1; i >= 0; i--) {
-						backgrounds[0][i].style.display = "block";
-						backgrounds[1][i].style.display = "none";
-						backgrounds[2][i].style.display = "none";
-						backgrounds[3][i].style.display = "none";
-					}
-					break;
-			}
-		},
-		pause
-	);
-}
+				switch ("block") {
+					case backgrounds[0][0].style.display:
+						for (var i = length - 1; i >= 0; i--) {
+							backgrounds[0][i].style.display = "none";
+							backgrounds[1][i].style.display = "block";
+						}
+						break;
+					default:
+						for (var i = length - 1; i >= 0; i--) {
+							backgrounds[0][i].style.display = "block";
+							backgrounds[1][i].style.display = "none";
+						}
+						break;
+				}
 
-function periodicBackground5() {
-	"use strict";
-	var backgrounds = [];
-	for (var i = 5; i > 0; i--) {backgrounds.push(document.getElementsByClassName("imgBackground-" + i + "-5"))}
-	const length = backgrounds[0].length;
-	setInterval(
-		function() {
-			switch ("block") {
-				case backgrounds[0][0].style.display:
-					for (var i = length - 1; i >= 0; i--) {
-						backgrounds[0][i].style.display = "none";
-						backgrounds[1][i].style.display = "block";
-					}
-					break;
-				case backgrounds[1][0].style.display:
-					for (var i = length - 1; i >= 0; i--) {
-						backgrounds[1][i].style.display = "none";
-						backgrounds[2][i].style.display = "block";
-					}
-					break;
-				case backgrounds[2][0].style.display:
-					for (var i = length - 1; i >= 0; i--) {
-						backgrounds[2][i].style.display = "none";
-						backgrounds[3][i].style.display = "block";
-					}
-					break;
-				case backgrounds[3][0].style.display:
-					for (var i = length - 1; i >= 0; i--) {
-						backgrounds[3][i].style.display = "none";
-						backgrounds[4][i].style.display = "block";
-					}
-					break;
-				default:
-					for (var i = length - 1; i >= 0; i--) {
-						backgrounds[0][i].style.display = "block";
-						backgrounds[1][i].style.display = "none";
-						backgrounds[2][i].style.display = "none";
-						backgrounds[3][i].style.display = "none";
-						backgrounds[4][i].style.display = "none";
-					}
-					break;
-			}
-		},
-		pause
-	);
-}
+			} else if (length == 3) {
 
-function periodicBackground16() {
-	"use strict";
-	var backgrounds = [];
-	for (var i = 16; i > 0; i--) {backgrounds.push(document.getElementsByClassName("imgBackground-" + i + "-16"))}
-	const length = backgrounds[0].length;
-	setInterval(
-		function() {
-			switch ("block") {
-				case backgrounds[0][0].style.display:
-					for (var i = length - 1; i >= 0; i--) {
-						backgrounds[0][i].style.display = "none";
-						backgrounds[1][i].style.display = "block";
-					}
-					break;
-				case backgrounds[1][0].style.display:
-					for (var i = length - 1; i >= 0; i--) {
-						backgrounds[1][i].style.display = "none";
-						backgrounds[2][i].style.display = "block";
-					}
-					break;
-				case backgrounds[2][0].style.display:
-					for (var i = length - 1; i >= 0; i--) {
-						backgrounds[2][i].style.display = "none";
-						backgrounds[3][i].style.display = "block";
-					}
-					break;
-				case backgrounds[3][0].style.display:
-					for (var i = length - 1; i >= 0; i--) {
-						backgrounds[3][i].style.display = "none";
-						backgrounds[4][i].style.display = "block";
-					}
-					break;
-				default:
-					for (var i = length - 1; i >= 0; i--) {
-						backgrounds[0][i].style.display = "block";
-						for (var j = 15; j > 0; j--) {backgrounds[j][i].style.display = "none";}
-					}
-					break;
+				switch ("block") {
+					case backgrounds[0][0].style.display:
+						for (var i = length - 1; i >= 0; i--) {
+							backgrounds[0][i].style.display = "none";
+							backgrounds[1][i].style.display = "block";
+						}
+						break;
+					case backgrounds[1][0].style.display:
+						for (var i = length - 1; i >= 0; i--) {
+							backgrounds[1][i].style.display = "none";
+							backgrounds[2][i].style.display = "block";
+						}
+						break;
+					default:
+						for (var i = length - 1; i >= 0; i--) {
+							backgrounds[0][i].style.display = "block";
+							backgrounds[1][i].style.display = "none";
+							backgrounds[2][i].style.display = "none";
+						}
+						break;
+				}
+
+			} else if (length == 4) {
+				
+				switch ("block") {
+					case backgrounds[0][0].style.display:
+						for (var i = length - 1; i >= 0; i--) {
+							backgrounds[0][i].style.display = "none";
+							backgrounds[1][i].style.display = "block";
+						}
+						break;
+					case backgrounds[1][0].style.display:
+						for (var i = length - 1; i >= 0; i--) {
+							backgrounds[1][i].style.display = "none";
+							backgrounds[2][i].style.display = "block";
+						}
+						break;
+					case backgrounds[2][0].style.display:
+						for (var i = length - 1; i >= 0; i--) {
+							backgrounds[2][i].style.display = "none";
+							backgrounds[3][i].style.display = "block";
+						}
+						break;
+					default:
+						for (var i = length - 1; i >= 0; i--) {
+							backgrounds[0][i].style.display = "block";
+							backgrounds[1][i].style.display = "none";
+							backgrounds[2][i].style.display = "none";
+							backgrounds[3][i].style.display = "none";
+						}
+						break;
+				}
+
+			} else if (length == 5) {
+				
+				switch ("block") {
+					case backgrounds[0][0].style.display:
+						for (var i = length - 1; i >= 0; i--) {
+							backgrounds[0][i].style.display = "none";
+							backgrounds[1][i].style.display = "block";
+						}
+						break;
+					case backgrounds[1][0].style.display:
+						for (var i = length - 1; i >= 0; i--) {
+							backgrounds[1][i].style.display = "none";
+							backgrounds[2][i].style.display = "block";
+						}
+						break;
+					case backgrounds[2][0].style.display:
+						for (var i = length - 1; i >= 0; i--) {
+							backgrounds[2][i].style.display = "none";
+							backgrounds[3][i].style.display = "block";
+						}
+						break;
+					case backgrounds[3][0].style.display:
+						for (var i = length - 1; i >= 0; i--) {
+							backgrounds[3][i].style.display = "none";
+							backgrounds[4][i].style.display = "block";
+						}
+						break;
+					default:
+						for (var i = length - 1; i >= 0; i--) {
+							backgrounds[0][i].style.display = "block";
+							backgrounds[1][i].style.display = "none";
+							backgrounds[2][i].style.display = "none";
+							backgrounds[3][i].style.display = "none";
+							backgrounds[4][i].style.display = "none";
+						}
+						break;
+				}
+
+			} else if (length == 16) {
+				
+				switch ("block") {
+					case backgrounds[0][0].style.display:
+						for (var i = length - 1; i >= 0; i--) {
+							backgrounds[0][i].style.display = "none";
+							backgrounds[1][i].style.display = "block";
+						}
+						break;
+					case backgrounds[1][0].style.display:
+						for (var i = length - 1; i >= 0; i--) {
+							backgrounds[1][i].style.display = "none";
+							backgrounds[2][i].style.display = "block";
+						}
+						break;
+					case backgrounds[2][0].style.display:
+						for (var i = length - 1; i >= 0; i--) {
+							backgrounds[2][i].style.display = "none";
+							backgrounds[3][i].style.display = "block";
+						}
+						break;
+					case backgrounds[3][0].style.display:
+						for (var i = length - 1; i >= 0; i--) {
+							backgrounds[3][i].style.display = "none";
+							backgrounds[4][i].style.display = "block";
+						}
+						break;
+					default:
+						for (var i = length - 1; i >= 0; i--) {
+							backgrounds[0][i].style.display = "block";
+							for (var j = 15; j > 0; j--) {backgrounds[j][i].style.display = "none";}
+						}
+						break;
+				}
+
 			}
 		},
 		pause
