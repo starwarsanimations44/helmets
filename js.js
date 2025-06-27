@@ -28,7 +28,7 @@ function toggleBackground() {
 
 const helmets = document.getElementsByClassName("img-random-helmet");
 const helmetsSources = [
-	"empire/common/stormtrooper.png",
+	"empire/models/stormtrooper.png",
 	"empire/common/shoretrooper.png",
 	"empire/common/purge.png",
 	
@@ -40,21 +40,21 @@ const helmetsSources = [
 
 	"republic/common/arc_I.png",
 	"republic/common/arc_II.png",
-	"republic/common/arf_I.png",
-	"republic/common/arf_II.png",
-	"republic/common/bar_II.png",
+	"republic/models/arf_I.png",
+	"republic/models/arf_II.png",
+	"republic/models/bar_II.png",
 	"republic/common/Captain_tro_I.png",
-	"republic/common/col_I.png",
-	"republic/common/col_II.png",
+	"republic/models/col_I.png",
+	"republic/models/col_II.png",
 	"republic/common/Commander_tro_I.png",
-	"republic/common/eng_I.png",
-	"republic/common/eng_II.png",
+	"republic/models/eng_I.png",
+	"republic/models/eng_II.png",
 	"republic/common/Lieutenant_tro_I.png",
-	"republic/common/par_II.png",
+	"republic/models/par_II.png",
 	"republic/common/pil_I.png",
-	"republic/common/pil_IIA.png",
-	"republic/common/pil_IIB.png",
-	"republic/common/sco_II.png",
+	"republic/models/pil_IIA.png",
+	"republic/models/pil_IIB.png",
+	"republic/models/sco_II.png",
 	"republic/common/Sergeant_tro_I.png",
 	"republic/models/trooper-i.png",
 	"republic/models/trooper-ii.png"
