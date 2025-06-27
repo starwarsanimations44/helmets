@@ -38,8 +38,8 @@ const helmetsSources = [
 	"mandalorians/common/jango-fett.png",
 	"mandalorians/common/pre-vizsla.png",
 
-	"republic/common/arc_I.png",
-	"republic/common/arc_II.png",
+	"republic/common/arc-i.png",
+	"republic/common/arc-ii.png",
 	"republic/models/arf_I.png",
 	"republic/models/arf_II.png",
 	"republic/models/bar_II.png",
