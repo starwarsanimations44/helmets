@@ -12,7 +12,7 @@ backgroundIsDisplayed = true;
 function toggleBackground() {
 	"use strict";
 	backgroundIsDisplayed = !backgroundIsDisplayed;
-	helmetsBackgrounds = document.getElementsByClassName("imgBackground");
+	var helmetsBackgrounds = document.getElementsByClassName("imgBackground");
 	backgroundColor = backgroundIsDisplayed ? "transparent" : "#ffffff";
 	buttons = document.getElementsByClassName("button");
 	for (var i = 0; i < buttons.length; i++) {buttons[i].style.backgroundColor = backgroundColor;}
