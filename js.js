@@ -32,7 +32,7 @@ helmetsSources = [
 	// "alliance/models/marine.png",
 	// "alliance/models/pilot.png",
 
-	"empire/models/pilot.png",
+	// "empire/models/pilot.png",
 	"empire/models/shore.png",
 	"empire/models/storm.png",
 	// "empire/models/death.png",
