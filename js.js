@@ -86,7 +86,7 @@ helmetsSources = [
 	"republic/units/battalion-104/cc_3636_Wolffe_I.png",
 	"republic/units/battalion-104/cc_3636_Wolffe_I2.png",
 	"republic/units/battalion-104/cc_3636_Wolffe_II.png",
-	"republic/units/battalion-104/ct-4860-boost-i.png",
+	// "republic/units/battalion-104/ct-4860-boost-i.png",
 	"republic/units/battalion-104/ct-4860-boost-ii.png",
 	"republic/units/battalion-104/tro_I.png",
 	"republic/units/battalion-104/tro_I2.png",
