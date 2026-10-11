@@ -7,18 +7,18 @@ a {
 a:hover {color: #abcdef;}
 
 body {
-	background: url(common/page.png) center fixed no-repeat;
+	background: url("common/page.jpeg") center fixed no-repeat;
 	background-size: cover;
 	margin: 5%;
 	text-align: center;
 	text-shadow: 2px 2px 2px #000;
 	color: #fedcba;
 	font-size: 200%;
-	font-family: bahnschrift;
+	font-family: "bahnschrift";
 }
 
 button {
-	font-family: bahnschrift;
+	font-family: "bahnschrift";
 	background-color: transparent;
 	border: 4px #abcedf solid;
 	border-radius: 15px;
@@ -35,8 +35,7 @@ button:hover {
 div {position: relative;}
 #table {overflow-x: auto;}
 
-h1,
-.title {
+h1 {
 	padding: 10px 10px;
 	border-radius: 30px;
 	color: #fff;
@@ -172,17 +171,3 @@ th {
 
 .h1-nite-owls {background-color: #195587}
 .h1-super-commando {background-color: #64141e}
-
-#aurebesh img {
-	height: 40px;
-	width: auto;
-	filter: invert() drop-shadow(3px 3px 1px #000);
-}
-#mandoa-title img {
-	width: 3%;
-	margin: -0.5% -0.5% -1.3% -0.5%;
-}
-#mandoa-title .img-mandoa-numbers {
-	width: 2%;
-	margin: -0.5% -0.5% -1.3% -0.5%;
-}
