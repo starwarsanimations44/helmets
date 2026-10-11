@@ -1,15 +1,14 @@
-pause = 1000; // ms
+pause = 2000; // ms
 sources = [];
 backgroundIsDisplayed = true;
 
 function toggleBackground() {
-	"use strict";
 	backgroundIsDisplayed = !backgroundIsDisplayed;
-	var helmetsBackgrounds = document.querySelectorAll(".imgBackground");
+	helmetsBackgrounds = document.querySelectorAll(".imgBackground");
 	backgroundColor = backgroundIsDisplayed ? "transparent" : "#fff";
 	buttons = document.querySelectorAll(".button");
-	for (var i = 0; i < buttons.length; i++) {buttons[i].style.backgroundColor = backgroundColor;}
-	for (var j = 0; j < helmetsBackgrounds.length; j++) {
+	for (i = 0; i < buttons.length; i++) {buttons[i].style.backgroundColor = backgroundColor;}
+	for (j = 0; j < helmetsBackgrounds.length; j++) {
 		if (backgroundIsDisplayed) {helmetsBackgrounds[j].src = sources[j];}
 		else {
 			sources[j] = helmetsBackgrounds[j].src;
@@ -162,10 +161,9 @@ helmetsSources = [
 ];
 
 function randomSource() {
-	"use strict";
 	setInterval(
 		function() {
-			for (var i = helmets.length - 1; i >= 0; i--) {
+			for (i = helmets.length - 1; i >= 0; i--) {
 				helmets[i].src = helmetsSources[Math.floor(Math.random() * helmetsSources.length)];
 			}
 		},
@@ -173,28 +171,17 @@ function randomSource() {
 	);
 }
 
-var languageTitle;
+languageTitle;
 
 function englishTo(language) {
-	"use strict";
-	switch (language) {
-		case "aurebesh":
-			languageTitle = document.getElementById(language);
-			break;
-		case "mandoa":
-			languageTitle = document.getElementById("mandoa-title");
-			break;
-	}
-	english.style.display = "block";
-	languageTitle.style.display = "none";
+	languageTitle = document.querySelector("h1");
+	languageTitle.style.fontFamily = "bahnschrift";
 	setInterval(
 		function() {
-			if (languageTitle.style.display == "none") {
-				languageTitle.style.display = "block";
-				english.style.display = "none";
+			if (languageTitle.style.fontFamily == "bahnschrift") {
+				languageTitle.style.fontFamily = language;
 			} else {
-				languageTitle.style.display = "none";
-				english.style.display = "block";
+				languageTitle.style.fontFamily = "bahnschrift";
 			}
 		},
 		pause
@@ -202,26 +189,25 @@ function englishTo(language) {
 }
 
 function multiplePeriodicBackgrounds(spanList) {
-	for (var i = spanList.length - 1; i >= 0; i--) {periodicBackground(spanList[i]);}
+	for (i = spanList.length - 1; i >= 0; i--) {periodicBackground(spanList[i]);}
 }
 
 function periodicBackground(number) {
-	"use strict";
-	var backgrounds = [];
-	for (var i = number; i > 0; i--) {backgrounds.push(document.querySelectorAll(".imgBackground-" + i + "-" + number))}
+	backgrounds = [];
+	for (i = number; i > 0; i--) {backgrounds.push(document.querySelectorAll(".imgBackground-" + i + "-" + number))}
 	length = backgrounds[0].length;
 	setInterval(
 		function() {
 			if (number == 2) {
 				switch ("block") {
 					case backgrounds[0][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (i = length - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "none";
 							backgrounds[1][i].style.display = "block";
 						}
 						break;
 					default:
-						for (var i = length - 1; i >= 0; i--) {
+						for (i = length - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "block";
 							backgrounds[1][i].style.display = "none";
 						}
@@ -230,19 +216,19 @@ function periodicBackground(number) {
 			} else if (number == 3) {
 				switch ("block") {
 					case backgrounds[0][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (i = length - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "none";
 							backgrounds[1][i].style.display = "block";
 						}
 						break;
 					case backgrounds[1][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (i = length - 1; i >= 0; i--) {
 							backgrounds[1][i].style.display = "none";
 							backgrounds[2][i].style.display = "block";
 						}
 						break;
 					default:
-						for (var i = length - 1; i >= 0; i--) {
+						for (i = length - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "block";
 							backgrounds[1][i].style.display = "none";
 							backgrounds[2][i].style.display = "none";
@@ -252,25 +238,25 @@ function periodicBackground(number) {
 			} else if (number == 4) {
 				switch ("block") {
 					case backgrounds[0][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (i = length - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "none";
 							backgrounds[1][i].style.display = "block";
 						}
 						break;
 					case backgrounds[1][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (i = length - 1; i >= 0; i--) {
 							backgrounds[1][i].style.display = "none";
 							backgrounds[2][i].style.display = "block";
 						}
 						break;
 					case backgrounds[2][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (i = length - 1; i >= 0; i--) {
 							backgrounds[2][i].style.display = "none";
 							backgrounds[3][i].style.display = "block";
 						}
 						break;
 					default:
-						for (var i = length - 1; i >= 0; i--) {
+						for (i = length - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "block";
 							backgrounds[1][i].style.display = "none";
 							backgrounds[2][i].style.display = "none";
@@ -281,31 +267,31 @@ function periodicBackground(number) {
 			} else if (number == 5) {
 				switch ("block") {
 					case backgrounds[0][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (i = length - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "none";
 							backgrounds[1][i].style.display = "block";
 						}
 						break;
 					case backgrounds[1][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (i = length - 1; i >= 0; i--) {
 							backgrounds[1][i].style.display = "none";
 							backgrounds[2][i].style.display = "block";
 						}
 						break;
 					case backgrounds[2][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (i = length - 1; i >= 0; i--) {
 							backgrounds[2][i].style.display = "none";
 							backgrounds[3][i].style.display = "block";
 						}
 						break;
 					case backgrounds[3][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (i = length - 1; i >= 0; i--) {
 							backgrounds[3][i].style.display = "none";
 							backgrounds[4][i].style.display = "block";
 						}
 						break;
 					default:
-						for (var i = length - 1; i >= 0; i--) {
+						for (i = length - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "block";
 							backgrounds[1][i].style.display = "none";
 							backgrounds[2][i].style.display = "none";
@@ -317,33 +303,33 @@ function periodicBackground(number) {
 			} else if (number == 16) {
 				switch ("block") {
 					case backgrounds[0][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (i = length - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "none";
 							backgrounds[1][i].style.display = "block";
 						}
 						break;
 					case backgrounds[1][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (i = length - 1; i >= 0; i--) {
 							backgrounds[1][i].style.display = "none";
 							backgrounds[2][i].style.display = "block";
 						}
 						break;
 					case backgrounds[2][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (i = length - 1; i >= 0; i--) {
 							backgrounds[2][i].style.display = "none";
 							backgrounds[3][i].style.display = "block";
 						}
 						break;
 					case backgrounds[3][0].style.display:
-						for (var i = length - 1; i >= 0; i--) {
+						for (i = length - 1; i >= 0; i--) {
 							backgrounds[3][i].style.display = "none";
 							backgrounds[4][i].style.display = "block";
 						}
 						break;
 					default:
-						for (var i = length - 1; i >= 0; i--) {
+						for (i = length - 1; i >= 0; i--) {
 							backgrounds[0][i].style.display = "block";
-							for (var j = 15; j > 0; j--) {backgrounds[j][i].style.display = "none";}
+							for (j = 15; j > 0; j--) {backgrounds[j][i].style.display = "none";}
 						}
 						break;
 				}
